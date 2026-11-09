@@ -1,0 +1,51 @@
+.logo_text{
+    color: var(--textTwo);
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-right: 8px;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.navbar-nav .nav-link{
+    color: var(--textOne);
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+.nav-search{
+    align-items: center;
+}
+
+.nav-search input{
+    padding-left: 50px;
+    border-radius: 20px;
+    width: 30em;
+    border: 1px solid var(--textOne);
+}
+
+.nav-search i{
+    color: var(--textOne);
+}
+
+
+.user-bag{
+    color: var(--textOne);
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+
+.user-perfil{
+    color: black;
+    padding-right: 15px;
+}
+
+.navbar{
+    height: 90px;
+    background-color: var(--textThree);
+}
