@@ -1,0 +1,185 @@
+/*
+import { Card } from '../components/Card';
+import './Home.css'
+
+export function Home() {
+  const pratos = [
+    {
+      id: 1,
+      titulo: "Hambúrguer Artesanal",
+      descricao: "Pão brioche, blend 180g, queijo cheddar e bacon.",
+      preco: "32,90",
+      imagem: "https://via.placeholder.com/320x200"
+    },
+    {
+      id: 2,
+      titulo: "Pizza Margherita",
+      descricao: "Molho de tomate pelati, mussarela de búfala e manjericão.",
+      preco: "45,00",
+      imagem: "https://via.placeholder.com/320x200"
+    },
+    {
+      id: 3,
+      titulo: "Hambúrguer Artesanal",
+      descricao: "Pão brioche, blend 180g, queijo cheddar e bacon.",
+      preco: "32,90",
+      imagem: "https://via.placeholder.com/320x200"
+    },
+    {
+      id: 3,
+      titulo: "Pizza Margherita",
+      descricao: "Molho de tomate pelati, mussarela de búfala e manjericão.",
+      preco: "45,00",
+      imagem: "https://via.placeholder.com/320x200"
+    },
+
+    {
+      id: 4,
+      titulo: "Hambúrguer Artesanal",
+      descricao: "Pão brioche, blend 180g, queijo cheddar e bacon.",
+      preco: "32,90",
+      imagem: "https://via.placeholder.com/320x200"
+    },
+  ];
+
+  return (
+    <main>
+      <section className='home-banner'>
+        <div className="home-banner-content">
+          <h3>
+            <i className="fa-solid fa-star"></i> 4.9 • 1.2k+ avaliações
+          </h3>
+          <h1>Gastronomia artesanal,</h1>
+          <h2>direto na sua mesa</h2>
+          <p>
+            Massa fresca enrolada à mão toda manhã, cortes maturados a
+            lenha e molhos com redução lenta. O aconchego da alta culinária
+            italiana com entrega rápida e impecável.
+          </p>
+          <button className='home-banner-btn'>
+            <i class="fa-solid fa-utensils"></i> Explorar Cardápio
+          </button>
+        </div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+          alt="Imagem de comida" />
+      </section>
+      <div className="card-container">
+        {pratos.map((prato) => (
+          <Card key={prato.id} prato={prato} />
+        ))}
+      </div>
+    </main>
+  );
+}
+*/
+.home-container {
+    margin-top: 0; 
+    padding-top: 32px; 
+    display: flow-root;
+}
+
+.home-container{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-banner {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 56px 32px;
+    box-sizing: border-box;
+}
+
+.home-banner-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.home-banner img {
+    flex: 1;
+    width: 100%;
+    max-width: 620px;
+    height: 460px;
+    border-radius: 16px;
+    
+}
+
+.home-banner h1{
+    color: black;
+    font: bold 48px 'Plus Jakarta Sans', sans-serif;
+  
+    margin: 0 0 4px 0;
+}
+
+    
+.home-banner h2{
+    color: var(--textTwo);
+    font: 500 48px 'Liberation Serif', sans-serif;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.home-banner h3{
+    color: var(--textOne);
+    font: 500 14px 'Plus Jakarta Sans', sans-serif;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.home-banner i{
+    color: var(--textTwo);
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+.home-banner p{
+    color: var(--textOne);
+    font: 400 18px 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 32px;
+    max-width: 600px;
+}
+
+.home-banner div{
+    display: row;
+    align-items: flex-start;
+}
+
+.home-banner-btn {
+    background-color: var(--textTwo);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font: 600 15px 'Plus Jakarta Sans', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.377);
+}
+
+.home-banner-btn i {
+    color: white;
+}
+
+.Card-title h1{
+    color: black;
+    font: bold 40px 'Plus Jakarta Sans', sans-serif;
+    text-align: start;
+    padding-left: 40px;
+}

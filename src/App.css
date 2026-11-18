@@ -1,3 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--textThree);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+------------------------------------------
 .counter {
   font-size: 16px;
   padding: 5px 10px;
