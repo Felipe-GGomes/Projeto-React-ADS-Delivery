@@ -1,3 +1,7 @@
+.navbar navbar{
+    box-shadow:inset 0 -1px 0 var(--border);
+}
+
 .logo_text{
     color: var(--textTwo);
     font-size: 1.3em;
@@ -48,4 +52,5 @@
 .navbar{
     height: 90px;
     background-color: var(--textThree);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.038);
 }
