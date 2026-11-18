@@ -1,29 +1,11 @@
-/*
-<section className="card" style={{ maxWidth: "320px" }}>
-      <img 
-        src={prato.imagem} 
-        className="card-img-top" 
-        alt={prato.titulo} 
-      />
-      
-      <div className="card-body">
-        <h4 className="card-title">{prato.titulo}</h4>
-        <p className="card-text">{prato.descricao}</p>
-        <h4>R$ {prato.preco}</h4>
-        <a href="#" className="btn-solid theme-primary">
-          pedir <i className="fa-solid fa-plus"></i>
-        </a>
-      </div>
-    </section>
-*/
-
 .card-container {
     border-radius: 12px;
     display: flex;
     flex-direction: row;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
-    padding: 0 16px;
+    padding: 20px 16px;
+
 }
 
 .card-body {
@@ -46,7 +28,7 @@
     text-align: start;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 15px;
-    color: #5A4138;
+    color: var(--textOne);
 }
 
 .card-bottom h3 {
@@ -71,7 +53,7 @@
     color: black;
     padding: 4px 10px;
     border-radius: 8px;
-    background-color: #F1EDE7;
+    background-color: var(--textThree);
 
     display: inline-flex;
     align-items: center;
