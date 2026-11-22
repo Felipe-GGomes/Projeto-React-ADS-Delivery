@@ -1,3 +1,4 @@
+import { AvaliacaoCard } from '../components/AvaliacaoCard';
 import { Card } from '../components/Card';
 import './Home.css'
 
@@ -41,6 +42,41 @@ export function Home() {
     },
   ];
 
+    const avaliacoes = [
+    {
+      id: 1,
+      estrelas: 5,
+      comentario: "Massa fresca impecável e entrega super rápida. Chegou quentinho como se tivesse acabado de sair da cozinha.",
+      nome: "Camila Ferreira",
+      cargo: "Advogada",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80"
+    },
+    {
+      id: 2,
+      estrelas: 5,
+      comentario: "O hambúrguer artesanal tem um sabor defumado incrível. Virou nosso pedido fixo de sexta-feira!",
+      nome: "Lucas Mendes",
+      cargo: "Arquiteto",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80"
+    },
+    {
+      id: 3,
+      estrelas: 5,
+      comentario: "O hambúrguer artesanal tem um sabor defumado incrível. Virou nosso pedido fixo de sexta-feira!",
+      nome: "Lucas Mendes",
+      cargo: "Arquiteto",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80"
+    },
+    {
+      id: 3,
+      estrelas: 5,
+      comentario: "Atendimento atencioso e porções muito bem servidas. Dá para sentir o cuidado em cada ingrediente.",
+      nome: "Mariana Costa",
+      cargo: "Designer",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80"
+    }
+  ];
+
   return (
     <main>
       <section className='home-banner'>
@@ -72,6 +108,42 @@ export function Home() {
             <Card key={prato.id} prato={prato} />
           ))}
         </article>
+      </section>
+
+      <section className='home-funcinamento'>
+        <h2>Horário de Funcionamento</h2>
+
+        <div className="horario">
+          <div className="horario-item">
+            <h3>Terça a Sexta-feira</h3>
+            <p className="horario-turno">18h30 – 23h30</p>
+          </div>
+
+          <div className="horario-item">
+            <h3>Sábado e Domingo</h3>
+            <div className="horario-finalSemana">
+              <span className="horario-turno">12h00 – 15h30</span>
+              <span className="horario-turno-dois">18h30 – 00h00</span>
+            </div>
+          </div>
+
+          <div className="horario-item horario-fechado">
+            <h3>Segunda-feira</h3>
+            <p>Fechado</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section className="avaliacoes-section">
+        <span className="avaliacoes-tag">AVALIAÇÕES REAIS</span>
+        <h2>O que nossos clientes dizem</h2>
+
+        <div className="avaliacoes-grid">
+          {avaliacoes.map((item) => (
+            <AvaliacaoCard key={item.id} avaliacao={item} />
+          ))}
+        </div>
       </section>
     </main>
   );

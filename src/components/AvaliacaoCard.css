@@ -1,0 +1,81 @@
+/*
+ return (
+    <article className="avaliacao-card">
+      <div className="avaliacao-estrelas">
+        {[1, 2, 3, 4, 5].map((num) => (
+            num <= avaliacao.estrelas && <i key={num} className="fa-solid fa-star"></i>
+        ))}
+        </div>
+
+      <p className="avaliacao-comentario">"{avaliacao.comentario}"</p>
+
+      <footer className="avaliacao-autor">
+        <img src={avaliacao.avatar} alt={avaliacao.nome} className="avaliacao-avatar" />
+        <div className="avaliacao-info">
+          <h4 className="avaliacao-nome">{avaliacao.nome}</h4>
+          <p className="avaliacao-cargo">{avaliacao.cargo}</p>
+        </div>
+      </footer>
+    </article>
+    */
+
+    .avaliacao-card{
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 28px;
+        height: 320px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .avaliacao-comentario {
+        color: var(--textOne);
+        font: 400 1.5 'Plus Jakarta Sans', sans-serif;
+        font-style: italic;
+        margin: 0 0 50px 0;
+    }
+
+    .avaliacao-autor {
+        margin-top: auto; 
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .avaliacao-estrelas {
+        display: flex;
+        gap: 2px;
+        color: var(--textTwo);
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .avaliacao-avatar{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .avaliacao-avatar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avaliacao-nome {
+        color: #1a1a1a;
+        font: 700 15px 'Plus Jakarta Sans', sans-serif;
+        margin: 0;
+    }
+
+    .avaliacao-cargo {
+        color: var(--textOne);
+        font: 500 13px 'Plus Jakarta Sans', sans-serif;
+        margin: 2px 0 0 0;
+    }
+

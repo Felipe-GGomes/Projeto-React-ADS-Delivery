@@ -1,7 +1,7 @@
 import './Card.css';
 export function Card({ prato }) {
   return (
-    <section className="card" style={{ maxWidth: "320px" }}>
+    <article className="card" style={{ maxWidth: "320px" }}>
       <img 
         src={prato.imagem} 
         className="card-img-top" 
@@ -17,6 +17,6 @@ export function Card({ prato }) {
             </a>
         </div>
       </div>
-    </section>
+    </article>
   );
 }
