@@ -4,6 +4,7 @@ import { CartContext } from "./CartContext";
 
 export function CartProvider({ children }) {
     const [carrinho, setCarrinho] = useState(() => loadCarrinho());
+    const [tipoEntrega, setTipoEntrega] = useState("Entrega");
 
     useEffect(() => {
         saveCarrinho(carrinho);
@@ -33,14 +34,14 @@ export function CartProvider({ children }) {
         if (quantidade < 1) {
             remover(linhaId);
             return;
-        };
+        }
 
         setCarrinho((atual) =>
             atual.map((linha) =>
                 linha.linhaId === linhaId ? { ...linha, quantidade } : linha
             )
         );
-    }
+    };
 
     const limpar = () => {
         setCarrinho([]);
@@ -57,7 +58,19 @@ export function CartProvider({ children }) {
     );
 
     return (
-        <CartContext.Provider value={{ carrinho, adicionar, remover, alterarQuantidade, limpar, total, quantidadeTotal }}>
+        <CartContext.Provider
+            value={{
+                carrinho,
+                adicionar,
+                remover,
+                alterarQuantidade,
+                limpar,
+                total,
+                quantidadeTotal,
+                tipoEntrega,
+                setTipoEntrega,
+            }}
+        >
             {children}
         </CartContext.Provider>
     );

@@ -44,7 +44,7 @@ export function Header() {
                         
                     </form>
                     <div className="user-info">
-                        <Link to="/"><i className="user-bag fa-solid fa-bag-shopping me-3"></i></Link>
+                        <Link to="/carrinho"><i className="user-bag fa-solid fa-bag-shopping me-3"></i></Link>
                         <Link to="/" ><i className="user-perfil fa-solid fa-circle-user fa-2xl"></i></Link>
                     </div>
                 </div>
